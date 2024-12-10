@@ -66,6 +66,12 @@ enum SelectionCriteria {
   OtherOption = "Lucky_Draw",
 }
 
+export interface ImageModalProps {
+  isVisible: boolean;
+  onClose: () => void;
+  activationQuestsData: Quest[] | null;
+}
+
 export interface ActivationData {
   id: string;
   name: string;
