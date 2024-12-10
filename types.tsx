@@ -160,6 +160,8 @@ export interface quizData {
 
 export interface Quest {
   id: string;
+  activationId?: string;
+  questId?: string;
   name: string;
   description: string;
   mandatory: boolean;
@@ -190,7 +192,7 @@ export interface Quest {
   GeneralInput?: any;
   maxEnteries?: number;
   maxParticipants?: number;
-  participants?: QuestParticipant[];
+  participants: QuestParticipant[];
   QuizQuest?: QuizQuest;
   UploadQuest?: UploadQuest;
   PollQuest?: PollQuest;
