@@ -100,6 +100,7 @@ export interface ParticipantData {
   ipAddress: string;
   activation: ActivationData; // Reference back to Activation
   user: User;
+  participated?: boolean;
 }
 export enum Status {
   Launched = "Launched",
