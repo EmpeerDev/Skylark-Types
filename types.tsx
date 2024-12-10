@@ -50,6 +50,7 @@ export interface CommunityData {
   websiteUrl: string;
   communityUrl: string;
   coverImgUrl: string;
+  flare?: string;
 }
 export interface RewardData {
   id?: string;
