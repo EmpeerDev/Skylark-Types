@@ -186,7 +186,7 @@ export interface Quest {
   GeneralInput?: any;
   maxEnteries?: number;
   maxParticipants?: number;
-  participants: QuestParticipant[];
+  participants?: QuestParticipant[];
   QuizQuest?: QuizQuest;
   UploadQuest?: UploadQuest;
   PollQuest?: PollQuest;
