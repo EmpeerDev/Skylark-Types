@@ -76,6 +76,7 @@ export interface ImageModalProps {
 export interface ActivationData {
   id: string;
   name: string;
+  activationId?: string;
   description: string;
   campaignId: string;
   rewardPoints: number;
@@ -92,6 +93,7 @@ export interface ActivationData {
   status: Status;
   Participants: ParticipantData[];
   Quests?: Quest[];
+  dpImgUrl?: string;
 }
 
 export interface CampaignData {
@@ -159,6 +161,7 @@ export interface quizData {
 export interface Quest {
   id: string;
   name: string;
+  description: string;
   mandatory: boolean;
   src: any;
   enteries: number;
@@ -199,6 +202,7 @@ export interface Quest {
   TelegramQuest?: TelegramQuest;
   ImageGenerationQuest?: ImageGenerationQuest;
   filteredParticipants?: QuestParticipant[];
+  participated?: boolean;
 }
 
 export interface QuizQuest {
