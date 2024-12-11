@@ -79,6 +79,7 @@ export interface ActivationData {
   activationId?: string;
   description: string;
   campaignId: string;
+  isActive: boolean;
   rewardPoints: number;
   imageUrl: string;
   selectionCriteria: SelectionCriteria;
