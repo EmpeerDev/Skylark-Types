@@ -3,8 +3,8 @@ export interface ReduxState {
   token: string;
 }
 export enum OTPTypes {
-  EMAIL = "EMAIL",
-  NUMBER = "NUMBER",
+  EMAIL = 'EMAIL',
+  NUMBER = 'NUMBER',
 }
 export interface OTPPayload {
   email: string;
@@ -53,8 +53,8 @@ export interface CommunityData {
   flare?: string;
 }
 export interface RewardData {
-  id?: string;
-  activationId?: string;
+  id: string;
+  activationId: string;
   numberOfWinners: number;
   name: string;
   priceValue: number;
@@ -63,8 +63,8 @@ export interface RewardData {
 }
 
 enum SelectionCriteria {
-  FirstComeFirstServe = "First_Come_First_Serve",
-  OtherOption = "Lucky_Draw",
+  FirstComeFirstServe = 'First_Come_First_Serve',
+  OtherOption = 'Lucky_Draw',
 }
 
 export interface ImageModalProps {
@@ -112,14 +112,14 @@ export interface ParticipantData {
   participated?: boolean;
 }
 export enum Status {
-  Launched = "Launched",
-  Completed = "Completed",
-  Draft = "Draft",
-  Ended = "Ended",
-  WinnerSelection = "WinnerSelection",
-  Pause = "Pause",
-  Created = "Created",
-  PrizeClaiming = "PrizeClaiming",
+  Launched = 'Launched',
+  Completed = 'Completed',
+  Draft = 'Draft',
+  Ended = 'Ended',
+  WinnerSelection = 'WinnerSelection',
+  Pause = 'Pause',
+  Created = 'Created',
+  PrizeClaiming = 'PrizeClaiming',
 }
 
 export interface QuestData {
@@ -247,9 +247,9 @@ export interface InputQuest {
 
 // Enum for InputType
 export enum InputType {
-  Email = "Email",
-  PhoneNumber = "PhoneNumber",
-  GeneralInput = "GeneralInput",
+  Email = 'Email',
+  PhoneNumber = 'PhoneNumber',
+  GeneralInput = 'GeneralInput',
 }
 
 // TwitterQuest Interface
@@ -263,11 +263,11 @@ export interface TwitterQuest {
 
 // Enum for TwitterQuestType
 export enum TwitterQuestType {
-  Like = "Like",
-  Retweet = "Retweet",
-  Follow = "Follow",
-  Quote = "Quote",
-  SpecificTweet = "SpecificTweet",
+  Like = 'Like',
+  Retweet = 'Retweet',
+  Follow = 'Follow',
+  Quote = 'Quote',
+  SpecificTweet = 'SpecificTweet',
 }
 
 // InstagramQuest Interface
@@ -281,8 +281,8 @@ export interface InstagramQuest {
 
 // Enum for InstagramQuestType
 export enum InstagramQuestType {
-  Like = "Like",
-  Follow = "Follow",
+  Like = 'Like',
+  Follow = 'Follow',
 }
 
 // LinkedInQuest Interface
@@ -296,8 +296,8 @@ export interface LinkedinQuest {
 
 // Enum for LinkedInQuestType
 export enum LinkedinQuestType {
-  Like = "Like",
-  Follow = "Follow",
+  Like = 'Like',
+  Follow = 'Follow',
 }
 
 // VisitWebsiteQuest Interface
