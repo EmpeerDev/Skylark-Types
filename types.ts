@@ -73,6 +73,16 @@ export interface rewardResponse {
   reward?: RewardData;
   error?: any;
 }
+export interface pollResults {
+  totalResponses?: number;
+  message?: string;
+  results?: result[];
+}
+export interface result {
+  option: string;
+  percentage: number;
+}
+
 enum SelectionCriteria {
   FirstComeFirstServe = 'First_Come_First_Serve',
   OtherOption = 'Lucky_Draw',
