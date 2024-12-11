@@ -68,6 +68,11 @@ export interface createRewardData {
   totalValue: number;
   message: string;
 }
+export interface rewardResponse {
+  message?: string;
+  reward?: RewardData;
+  error?: any;
+}
 enum SelectionCriteria {
   FirstComeFirstServe = 'First_Come_First_Serve',
   OtherOption = 'Lucky_Draw',
