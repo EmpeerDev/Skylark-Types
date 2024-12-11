@@ -1,2 +1,3 @@
 # Skyalrk-Types
-Types for Skylark Frontend and backedn
+
+Types for Skylark Frontend and backend
