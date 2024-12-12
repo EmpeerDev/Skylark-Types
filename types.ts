@@ -68,6 +68,10 @@ export interface createRewardData {
   totalValue: number;
   message: string;
 }
+export interface participantMessage {
+  message?: string;
+  error?: any;
+}
 export interface rewardResponse {
   message?: string;
   reward?: RewardData;
@@ -82,7 +86,15 @@ export interface result {
   option: string;
   percentage: number;
 }
+export interface quizData extends participantMessage {
+  userSelectedIndex: number;
+}
 
+export interface inputData {
+  userInput: string;
+  message?: string;
+  error?: any;
+}
 enum SelectionCriteria {
   FirstComeFirstServe = 'First_Come_First_Serve',
   OtherOption = 'Lucky_Draw',
