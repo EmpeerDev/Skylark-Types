@@ -95,6 +95,11 @@ export interface inputData {
   message?: string;
   error?: any;
 }
+export interface imageGenerationData {
+  userAnswer: string[];
+
+  error?: any;
+}
 enum SelectionCriteria {
   FirstComeFirstServe = 'First_Come_First_Serve',
   OtherOption = 'Lucky_Draw',
