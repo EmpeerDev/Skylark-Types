@@ -86,8 +86,9 @@ export interface result {
   option: string;
   percentage: number;
 }
-export interface quizData extends participantMessage {
+export interface quizData {
   userSelectedIndex: number;
+  message?: string;
 }
 
 export interface inputData {
