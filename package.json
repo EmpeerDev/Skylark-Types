@@ -1,0 +1,13 @@
+{
+  "name": "skylark-types",
+  "version": "1.0.0",
+  "description": "Types for Skylark Frontend and backend",
+  "main": "types.ts",
+  "types": "types.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
