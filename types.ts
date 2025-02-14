@@ -3,8 +3,8 @@ export interface ReduxState {
   token: string;
 }
 export enum OTPTypes {
-  EMAIL = 'EMAIL',
-  NUMBER = 'NUMBER',
+  EMAIL = "EMAIL",
+  NUMBER = "NUMBER",
 }
 export interface OTPPayload {
   email: string;
@@ -102,8 +102,8 @@ export interface imageGenerationData {
   error?: any;
 }
 enum SelectionCriteria {
-  FirstComeFirstServe = 'First_Come_First_Serve',
-  OtherOption = 'Lucky_Draw',
+  FirstComeFirstServe = "First_Come_First_Serve",
+  OtherOption = "Lucky_Draw",
 }
 
 export interface ImageModalProps {
@@ -152,14 +152,14 @@ export interface ParticipantData {
   participated?: boolean;
 }
 export enum Status {
-  Launched = 'Launched',
-  Completed = 'Completed',
-  Draft = 'Draft',
-  Ended = 'Ended',
-  WinnerSelection = 'WinnerSelection',
-  Pause = 'Pause',
-  Created = 'Created',
-  PrizeClaiming = 'PrizeClaiming',
+  Launched = "Launched",
+  Completed = "Completed",
+  Draft = "Draft",
+  Ended = "Ended",
+  WinnerSelection = "WinnerSelection",
+  Pause = "Pause",
+  Created = "Created",
+  PrizeClaiming = "PrizeClaiming",
 }
 
 export interface QuestData {
@@ -214,6 +214,7 @@ export interface Quest {
   inputAnswer?: string;
   correctAnswer?: string;
   correctOptionIndex?: number;
+  radius?: number;
   placeholder?: string;
   answerPlaceholder?: string;
   pollPlaceholder?: string;
@@ -243,6 +244,7 @@ export interface Quest {
   LinkedinQuest?: LinkedinQuest;
   TelegramQuest?: TelegramQuest;
   ImageGenerationQuest?: ImageGenerationQuest;
+  GeoLocatioNQuest?: GeoLocationQuest;
   filteredParticipants?: QuestParticipant[];
   participated?: boolean;
 }
@@ -287,9 +289,9 @@ export interface InputQuest {
 
 // Enum for InputType
 export enum InputType {
-  Email = 'Email',
-  PhoneNumber = 'PhoneNumber',
-  GeneralInput = 'GeneralInput',
+  Email = "Email",
+  PhoneNumber = "PhoneNumber",
+  GeneralInput = "GeneralInput",
 }
 
 // TwitterQuest Interface
@@ -303,11 +305,11 @@ export interface TwitterQuest {
 
 // Enum for TwitterQuestType
 export enum TwitterQuestType {
-  Like = 'Like',
-  Retweet = 'Retweet',
-  Follow = 'Follow',
-  Quote = 'Quote',
-  SpecificTweet = 'SpecificTweet',
+  Like = "Like",
+  Retweet = "Retweet",
+  Follow = "Follow",
+  Quote = "Quote",
+  SpecificTweet = "SpecificTweet",
 }
 
 // InstagramQuest Interface
@@ -321,8 +323,8 @@ export interface InstagramQuest {
 
 // Enum for InstagramQuestType
 export enum InstagramQuestType {
-  Like = 'Like',
-  Follow = 'Follow',
+  Like = "Like",
+  Follow = "Follow",
 }
 
 // LinkedInQuest Interface
@@ -336,8 +338,8 @@ export interface LinkedinQuest {
 
 // Enum for LinkedInQuestType
 export enum LinkedinQuestType {
-  Like = 'Like',
-  Follow = 'Follow',
+  Like = "Like",
+  Follow = "Follow",
 }
 
 // VisitWebsiteQuest Interface
@@ -363,6 +365,15 @@ export interface ImageGenerationQuest {
   questId: string;
   prompt: string;
   maxEnteries: number;
+}
+export interface GeoLocationQuest {
+  id: string;
+  quest: Quest;
+  questId: string;
+  prompt: string;
+  longitude: number;
+  latitude: number;
+  radius: number;
 }
 
 export interface QuestParticipant {
