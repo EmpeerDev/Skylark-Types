@@ -247,8 +247,17 @@ export interface Quest {
   GeoLocatioNQuest?: GeoLocationQuest;
   filteredParticipants?: QuestParticipant[];
   participated?: boolean;
+  options?: string[];
+  langitude?: number;
+  latitude?: number;
+
+  Location?: location;
 }
 
+interface location {
+  longitude?: number;
+  latitude?: number;
+}
 export interface QuizQuest {
   id: string;
   quest: Quest;
