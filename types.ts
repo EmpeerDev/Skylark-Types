@@ -254,7 +254,7 @@ export interface Quest {
   Location?: location;
 }
 
-interface location {
+export interface location {
   longitude?: number;
   latitude?: number;
 }
