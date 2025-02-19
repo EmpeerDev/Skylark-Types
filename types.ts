@@ -244,7 +244,8 @@ export interface Quest {
   LinkedinQuest?: LinkedinQuest;
   TelegramQuest?: TelegramQuest;
   ImageGenerationQuest?: ImageGenerationQuest;
-  GeoLocatioNQuest?: GeoLocationQuest;
+  GeoLocationQuest?: GeoLocationQuest;
+  GoogleReviewsQuest?: GoogleReviewsQuest;
   filteredParticipants?: QuestParticipant[];
   participated?: boolean;
   options?: string[];
@@ -253,7 +254,7 @@ export interface Quest {
   Location?: location;
 }
 
-interface location {
+export interface location {
   longitude?: number;
   latitude?: number;
 }
@@ -382,6 +383,15 @@ export interface GeoLocationQuest {
   longitude: number;
   latitude: number;
   radius: number;
+}
+
+export interface GoogleReviewsQuest {
+  id: string;
+  quest: Quest;
+  questId: string;
+  prompt: string;
+  longitude: number;
+  latitude: number;
 }
 
 export interface QuestParticipant {
