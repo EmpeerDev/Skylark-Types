@@ -250,7 +250,6 @@ export interface Quest {
   options?: string[];
   langitude?: number;
   latitude?: number;
-
   Location?: location;
 }
 
